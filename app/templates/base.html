@@ -1,0 +1,14 @@
+<html>
+  <head>
+  	{% if title %}
+  	<title>{{ title }}</title>
+  	{% else %}
+  	<title>gschouse</title>
+  	{% endif %}
+  </head>
+  <body>
+  	<div>gschouse: <a href="/home">Home</a> | <a href="/about">About</a> | Players | Rankings</div>
+  	<hr>
+  	{% block content %}{% endblock %}
+  </body>
+</html>
