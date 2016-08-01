@@ -9,3 +9,7 @@ SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
 
 # suppresses the warning when running stuff
 SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+WTF_CRSF_ENABLED = True
+
+SECRET_KEY = "kickflip21"

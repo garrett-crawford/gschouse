@@ -8,6 +8,17 @@
   </head>
   <body>
   	<div>gschouse: <a href="/home">Home</a> | <a href="/about">About</a> | <a href="/players">Players</a> | Rankings</div>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <hr>
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+      </ul>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
   	<hr>
   	{% block content %}{% endblock %}
   </body>

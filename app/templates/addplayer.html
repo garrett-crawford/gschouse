@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Add Player</h1>
+	<form action = "" method = "post" name = "addplayer">
+		{{ form.hidden_tag() }}
+		<p>
+			Player tag: {{ form.nickname(size = 40) }}<br><br>
+			Player main: {{ form.main(size = 20) }}<br><br>
+			Player rank: {{ form.ranking(size = 3) }}<br><br>
+			Player description: {{ form.description(size = 200) }}<br><br>
+		</p>
+		<p><input type = "submit" value = "Add Player"></p>
+	</form>
+
+{% endblock %}
