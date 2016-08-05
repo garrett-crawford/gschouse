@@ -32,3 +32,9 @@ def addPlayer():
 		return redirect(url_for('players'))
 
 	return render_template('addplayer.html', title = "Add Player", form = form)
+
+@app.route('/rankings')
+def rankings():
+	players = Player.query.order_by(Player.ranking).all()
+
+	return render_template('rankings.html', players = players)

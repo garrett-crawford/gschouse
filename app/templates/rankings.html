@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>Rankings</h1>
+	{% for player in players %}
+		<table>
+			<tr valign = "top">
+				<td>
+					Name: {{ player.nickname }} <br>Main: {{ player.main }} <br>Rank: {{ player.ranking }}
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<br>
+	{% endfor %}
+{% endblock %}
