@@ -5,11 +5,9 @@
 		<table>
 			<tr valign = "top">
 				<td>
-					Name: {{ player.nickname }} <br>Main: {{ player.main }} <br>Rank: {{ player.ranking }}
+					#{{ player.ranking }}:  {{ player.nickname }}
 				</td>
 			</tr>
 		</table>
-		<hr>
-		<br>
 	{% endfor %}
 {% endblock %}
